@@ -2,14 +2,13 @@
 ## AI & Machine Learning Internship
 
 ### Intern Details
-Name: Rakshitha M
-Offer Letter ID: SSG/AIML/B1/0014
-Domain: AI & Machine Learning
-Batch: B1
-Internship Duration: September - October 2026
-GitHub Profile: https://github.com/Rakshithamrakshi
-LinkedIn Profile: https://www.linkedin.com/in/rakshitha-m-758332389
-
+- **Name:** Rakshitha M
+- **Offer Letter ID:** SSG/AIML/B1/0014
+- **Domain:** AI & Machine Learning
+- **Batch:** B1
+- **Internship Duration:** September - October 2026
+- **GitHub Profile:** https://github.com/Rakshithamrakshi
+- **LinkedIn Profile:** https://www.linkedin.com/in/rakshitha-m-758332389
 ---
 
 ## Internship Progress
