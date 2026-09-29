@@ -19,10 +19,10 @@
 | Week 1 | Data Cleaning & EDA | Completed | [View](Week-1/Task-1.2-Data-Cleaning-EDA) |
 | Week 1 | Math for ML | Completed | [View](Week-1/Task-1.3-Math-for-ML) |
 | Week 1 | Scikit-Learn Models | Completed | [View](Week-1/Task-1.4-Scikit-Learn-Models) |
-| Week 2 | PyTorch Neural Network | Pending | - |
-| Week 2 | CNN Image Classifier | Pending | - |
-| Week 2 | Hyperparameter Experiments | Pending | - |
-| Week 2 | Technical Report | Pending | - |
+| Week 2 | PyTorch Neural Network | Completed | [View](Week-2/Task-2.1-PyTorch-Neural-Network) |
+| Week 2 | CNN Image Classifier | Completed | [View](Week-2/Task-2.2-CNN-Image-Classifier) |
+| Week 2 | Hyperparameter Experiments | Completed | [View](Week-2/Task-2.3-Hyperparameter-Experiments) |
+| Week 2 | Technical Report | Completed | [View](Week-2/Task-2.4-Technical-Report) |
 | Week 3 | TensorFlow/Keras Model | Pending | - |
 | Week 3 | CV/Text Classification | Pending | - |
 | Week 3 | Prompt Engineering | Pending | - |
@@ -44,6 +44,16 @@ and two evaluated Scikit-learn models (regression + classification) with
 error analysis.
 
 ### Week 2 - Deep Learning with PyTorch
+Completed all 4 tasks: built and trained a feed-forward neural network in 
+PyTorch on the California Housing dataset (tensors, Dataset/DataLoader, 
+training loop, evaluation); built and trained a CNN image classifier on 
+Fashion-MNIST (91.64% test accuracy) with a saved model file; ran 13 
+controlled hyperparameter experiments comparing learning rate, optimizer, 
+batch size, and epoch count, with a master comparison table and a justified 
+final configuration; and summarized all three tasks in a 2-page technical 
+report covering architecture, results, generalization behavior, and 
+limitations.
+
 ### Week 3 - TensorFlow, GenAI & Prompt Engineering
 ### Week 4 - LangChain, LangGraph & AI Agents
 
