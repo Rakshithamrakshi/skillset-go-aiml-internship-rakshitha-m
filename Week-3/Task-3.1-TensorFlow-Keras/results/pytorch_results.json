@@ -1,0 +1,22 @@
+{
+  "framework": "PyTorch (re-run, seed 42)",
+  "torch_version": "2.14.0+cpu",
+  "python_version": "3.11.9",
+  "device": "CPU",
+  "dataset": "California Housing",
+  "train_samples": 16512,
+  "test_samples": 4128,
+  "epochs": 50,
+  "batch_size": 32,
+  "learning_rate": 0.001,
+  "random_seed": 42,
+  "parameters": 833,
+  "train_mse": 0.2697,
+  "train_mae": 0.3505,
+  "test_mse": 0.2877,
+  "test_mae": 0.3597,
+  "test_rmse": 0.5364,
+  "test_r2": 0.7805,
+  "final_epoch_running_train_loss": 0.2686,
+  "training_time_seconds": 39.0
+}

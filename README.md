@@ -55,6 +55,12 @@ report covering architecture, results, generalization behavior, and
 limitations.
 
 ### Week 3 - TensorFlow, GenAI & Prompt Engineering
+Task 3.1 completed: built a TensorFlow/Keras feed-forward network on the California
+Housing dataset using the same split, scaling, architecture and training settings as the
+Week 2 PyTorch model, and compared the two using a seeded, timed PyTorch re-run
+(test MSE 0.2916 Keras vs 0.2877 PyTorch, a gap within the run-to-run variation observed;
+training time 70.6 s vs 39.0 s on CPU). Tasks 3.2-3.4: in progress.
+
 ### Week 4 - LangChain, LangGraph & AI Agents
 
 ---

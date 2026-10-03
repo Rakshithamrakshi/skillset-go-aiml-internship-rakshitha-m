@@ -1,0 +1,10 @@
+Metric,PyTorch,TensorFlow/Keras
+Test MSE (loss),0.2877,0.2916
+Test MAE,0.3597,0.368
+Test RMSE,0.5364,0.54
+Test R-squared,0.7805,0.7774
+Train MSE (final weights),0.2697,0.2683
+Train MAE (final weights),0.3505,0.3561
+Final-epoch running train loss,0.2686,0.2697
+Training time (seconds),39.0,70.6
+Parameters,833.0,833.0
