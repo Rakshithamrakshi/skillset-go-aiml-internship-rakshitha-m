@@ -1,0 +1,46 @@
+[
+  {
+    "model":"Always predict ham",
+    "accuracy":0.8734,
+    "spam_precision":0.0,
+    "spam_recall":0.0,
+    "spam_f1":0.0,
+    "TN":904,
+    "FP":0,
+    "FN":131,
+    "TP":0
+  },
+  {
+    "model":"TF-IDF + LR (4,136 train)",
+    "accuracy":0.9623,
+    "spam_precision":0.9894,
+    "spam_recall":0.7099,
+    "spam_f1":0.8267,
+    "TN":903,
+    "FP":1,
+    "FN":38,
+    "TP":93
+  },
+  {
+    "model":"TF-IDF + LR (3,515 train)",
+    "accuracy":0.9614,
+    "spam_precision":0.9892,
+    "spam_recall":0.7023,
+    "spam_f1":0.8214,
+    "TN":903,
+    "FP":1,
+    "FN":39,
+    "TP":92
+  },
+  {
+    "model":"Keras text model (3,515 train)",
+    "accuracy":0.9681,
+    "spam_precision":0.8828,
+    "spam_recall":0.8626,
+    "spam_f1":0.8726,
+    "TN":889,
+    "FP":15,
+    "FN":18,
+    "TP":113
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "model": "Always predict ham",
+    "accuracy": 0.8734,
+    "spam_precision": 0.0,
+    "spam_recall": 0.0,
+    "spam_f1": 0.0,
+    "TN": 904,
+    "FP": 0,
+    "FN": 131,
+    "TP": 0
+  },
+  {
+    "model": "TF-IDF + Logistic Regression",
+    "accuracy": 0.9623,
+    "spam_precision": 0.9894,
+    "spam_recall": 0.7099,
+    "spam_f1": 0.8267,
+    "TN": 903,
+    "FP": 1,
+    "FN": 38,
+    "TP": 93
+  }
+]

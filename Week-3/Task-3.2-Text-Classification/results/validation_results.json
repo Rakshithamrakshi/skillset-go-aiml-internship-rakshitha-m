@@ -1,0 +1,24 @@
+[
+  {
+    "model":"TF-IDF + LR (3,515 train)",
+    "accuracy":0.9726,
+    "spam_precision":0.9841,
+    "spam_recall":0.7949,
+    "spam_f1":0.8794,
+    "TN":542,
+    "FP":1,
+    "FN":16,
+    "TP":62
+  },
+  {
+    "model":"Keras text model",
+    "accuracy":0.9855,
+    "spam_precision":0.9726,
+    "spam_recall":0.9103,
+    "spam_f1":0.9404,
+    "TN":541,
+    "FP":2,
+    "FN":7,
+    "TP":71
+  }
+]

@@ -217,3 +217,8 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 Week-2/Task-2.2-CNN-Image-Classifier/notebooks/data/
+
+
+
+# Task 3.2 raw dataset (see data/README.md for download instructions)
+Week-3/Task-3.2-Text-Classification/data/raw/

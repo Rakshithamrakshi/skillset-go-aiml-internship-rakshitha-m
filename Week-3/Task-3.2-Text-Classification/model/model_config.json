@@ -1,0 +1,6 @@
+{
+  "max_tokens": 5000,
+  "seq_len": 50,
+  "embedding_dim": 16,
+  "threshold": 0.5
+}
