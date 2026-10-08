@@ -23,9 +23,9 @@
 | Week 2 | CNN Image Classifier | Completed | [View](Week-2/Task-2.2-CNN-Image-Classifier) |
 | Week 2 | Hyperparameter Experiments | Completed | [View](Week-2/Task-2.3-Hyperparameter-Experiments) |
 | Week 2 | Technical Report | Completed | [View](Week-2/Task-2.4-Technical-Report) |
-| Week 3 | TensorFlow/Keras Model | Pending | - |
-| Week 3 | CV/Text Classification | Pending | - |
-| Week 3 | Prompt Engineering | Pending | - |
+| Week 3 | TensorFlow/Keras Model | Completed | [View](Week-3/Task-3.1-TensorFlow-Keras) |
+| Week 3 | CV/Text Classification | Completed | [View](Week-3/Task-3.2-Text-Classification) |
+| Week 3 | Prompt Engineering | Completed | [View](Week-3/Task-3.3-Prompt-Engineering) |
 | Week 3 | AI-Assisted Coding | Pending | - |
 | Week 4 | RAG Application | Pending | - |
 | Week 4 | LangGraph Workflow | Pending | - |
@@ -63,7 +63,12 @@ training time 70.6 s vs 39.0 s on CPU). Task 3.2 completed: built an SMS spam cl
 in TensorFlow/Keras on the UCI SMS Spam Collection (duplicates removed, stratified split,
 TF-IDF baselines); on the held-out test set the Keras model reached spam recall 0.86 and
 precision 0.88 (F1 0.87) against recall 0.71 and precision 0.99 (F1 0.83) for the baseline,
-with saved model files, a prediction script and documented limitations. Tasks 3.3-3.4: in progress.
+with saved model files, a prediction script and documented limitations. Task 3.3 completed:
+built a prompt engineering portfolio for reasoning, extraction, summarization and coding,
+using invented test inputs, expected answers and scoring rules written before running, one
+change per prompt version, and scored results for every version (final versions scored 15/15
+reasoning, 30/30 extraction, 11/12 summarization and 22/22 coding; one model, ChatGPT, and
+one run per input, so consistency across runs is not verified). Task 3.4: in progress.
 
 ### Week 4 - LangChain, LangGraph & AI Agents
 
