@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form.add-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button {
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 15px;
+        }
+
+        .task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .task-text.done {
+            text-decoration: line-through;
+            color: #777;
+        }
+
+        .actions {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+
+    <form class="add-form" method="POST">
+        <input
+            type="text"
+            name="text"
+            maxlength="100"
+            placeholder="Enter a task"
+        >
+        <button type="submit">Add</button>
+    </form>
+
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+
+    {% for task in tasks %}
+        <div class="task">
+            <span class="task-text {% if task.done %}done{% endif %}">
+                {{ task.text }}
+            </span>
+
+            <div class="actions">
+                <form method="POST" action="{{ url_for('toggle_task', task_id=task.id) }}">
+                    <button type="submit">
+                        {% if task.done %}Not Done{% else %}Done{% endif %}
+                    </button>
+                </form>
+
+                <form method="POST" action="{{ url_for('delete_task', task_id=task.id) }}">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    {% else %}
+        <p>No tasks yet.</p>
+    {% endfor %}
+</body>
+</html>
