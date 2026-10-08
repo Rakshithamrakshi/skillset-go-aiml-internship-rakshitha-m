@@ -225,3 +225,7 @@ Week-3/Task-3.2-Text-Classification/data/raw/
 tasks.json
 
 tasks.json.damaged
+
+# Week 4 environment and local secrets
+venv-week4/
+.env
