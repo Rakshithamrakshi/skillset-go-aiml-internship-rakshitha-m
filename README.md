@@ -26,7 +26,7 @@
 | Week 3 | TensorFlow/Keras Model | Completed | [View](Week-3/Task-3.1-TensorFlow-Keras) |
 | Week 3 | CV/Text Classification | Completed | [View](Week-3/Task-3.2-Text-Classification) |
 | Week 3 | Prompt Engineering | Completed | [View](Week-3/Task-3.3-Prompt-Engineering) |
-| Week 3 | AI-Assisted Coding | Pending | - |
+| Week 3 | AI-Assisted Coding | Completed | [View](Week-3/Task-3.4-AI-Assisted-Coding) |
 | Week 4 | RAG Application | Pending | - |
 | Week 4 | LangGraph Workflow | Pending | - |
 | Week 4 | LangSmith Evaluation | Pending | - |
@@ -68,7 +68,7 @@ built a prompt engineering portfolio for reasoning, extraction, summarization an
 using invented test inputs, expected answers and scoring rules written before running, one
 change per prompt version, and scored results for every version (final versions scored 15/15
 reasoning, 30/30 extraction, 11/12 summarization and 22/22 coding; one model, ChatGPT, and
-one run per input, so consistency across runs is not verified). Task 3.4: in progress.
+one run per input, so consistency across runs is not verified). Task 3.4 completed: built a Flask to-do app with ChatGPT, then audited the generated code with test scripts; four problems were confirmed and fixed (debug mode on, list-position task ids, a crash on wrong-type JSON, and a damaged file overwritten), checked with Flask's test client rather than a real browser.
 
 ### Week 4 - LangChain, LangGraph & AI Agents
 
