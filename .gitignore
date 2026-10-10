@@ -229,3 +229,5 @@ tasks.json.damaged
 # Week 4 environment and local secrets
 venv-week4/
 .env
+
+Week-4/Task-4.1-RAG-Application/faiss_index/
