@@ -27,7 +27,7 @@
 | Week 3 | CV/Text Classification | Completed | [View](Week-3/Task-3.2-Text-Classification) |
 | Week 3 | Prompt Engineering | Completed | [View](Week-3/Task-3.3-Prompt-Engineering) |
 | Week 3 | AI-Assisted Coding | Completed | [View](Week-3/Task-3.4-AI-Assisted-Coding) |
-| Week 4 | RAG Application | In Progress | [View](Week-4/Task-4.1-RAG-Application) |
+| Week 4 | RAG Application | Completed | [View](Week-4/Task-4.1-RAG-Application) |
 | Week 4 | LangGraph Workflow | Pending | - |
 | Week 4 | LangSmith Evaluation | Pending | - |
 | Week 4 | AI Agent Capstone | Pending | - |
@@ -71,6 +71,7 @@ reasoning, 30/30 extraction, 11/12 summarization and 22/22 coding; one model, Ch
 one run per input, so consistency across runs is not verified). Task 3.4 completed: built a Flask to-do app with ChatGPT, then audited the generated code with test scripts; four problems were confirmed and fixed (debug mode on, list-position task ids, a crash on wrong-type JSON, and a damaged file overwritten), checked with Flask's test client rather than a real browser.
 
 ### Week 4 - LangChain, LangGraph & AI Agents
+Task 4.1 completed: built a LangChain RAG assistant over 7 of my own project README files (64 chunks, size 500 and overlap 50), using local all-MiniLM-L6-v2 embeddings, a FAISS index and Gemini (gemini-3.1-flash-lite) with a grounded prompt, k = 4 and a distance threshold of 1.2; tested easy, multi-part, near-miss, out-of-scope and invalid inputs, with two documented poor-retrieval cases (a Limitations chunk ranked above the answer; a "Final configuration" Results chunk not retrieved); the threshold was set from few examples and is untuned.
 
 ---
 
