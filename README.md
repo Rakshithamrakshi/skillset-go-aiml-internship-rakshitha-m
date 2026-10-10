@@ -27,7 +27,7 @@
 | Week 3 | CV/Text Classification | Completed | [View](Week-3/Task-3.2-Text-Classification) |
 | Week 3 | Prompt Engineering | Completed | [View](Week-3/Task-3.3-Prompt-Engineering) |
 | Week 3 | AI-Assisted Coding | Completed | [View](Week-3/Task-3.4-AI-Assisted-Coding) |
-| Week 4 | RAG Application | Pending | - |
+| Week 4 | RAG Application | In Progress | [View](Week-4/Task-4.1-RAG-Application) |
 | Week 4 | LangGraph Workflow | Pending | - |
 | Week 4 | LangSmith Evaluation | Pending | - |
 | Week 4 | AI Agent Capstone | Pending | - |
