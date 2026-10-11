@@ -29,7 +29,7 @@
 | Week 3 | AI-Assisted Coding | Completed | [View](Week-3/Task-3.4-AI-Assisted-Coding) |
 | Week 4 | RAG Application | Completed | [View](Week-4/Task-4.1-RAG-Application) |
 | Week 4 | LangGraph Workflow | Completed | [View](Week-4/Task-4.2-LangGraph-Workflow) |
-| Week 4 | LangSmith Evaluation | Pending | - |
+| Week 4 | LangSmith Evaluation | Completed | [View](Week-4/Task-4.3-LangSmith-Evaluation) |
 | Week 4 | AI Agent Capstone | Pending | - |
 
 ---
@@ -73,6 +73,7 @@ one run per input, so consistency across runs is not verified). Task 3.4 complet
 ### Week 4 - LangChain, LangGraph & AI Agents
 Task 4.1 completed: built a LangChain RAG assistant over 7 of my own project README files (64 chunks, size 500 and overlap 50), using local all-MiniLM-L6-v2 embeddings, a FAISS index and Gemini (gemini-3.1-flash-lite) with a grounded prompt, k = 4 and a distance threshold of 1.2; tested easy, multi-part, near-miss, out-of-scope and invalid inputs, with two documented poor-retrieval cases (a Limitations chunk ranked above the answer; a "Final configuration" Results chunk not retrieved); the threshold was set from few examples and is untuned.
 Task 4.2 completed: built a LangGraph workflow around the Task 4.1 RAG pipeline (5 nodes, 2 conditional branches, a state field that logs the path taken), designed in a diagram first and checked against the code; tested a normal question, short and empty text, a non-text input, an out-of-scope question and a near-miss question; limitation: the path does not show when the model refuses inside the generate node.
+Task 4.3 completed: traced the LangGraph workflow in LangSmith (13 runs; expected answers written before running) and recorded latency per run (about 0.1 s when Gemini is skipped, 3.5 to 7.1 s when it is called, one run per question); found a Results chunk missing from retrieval, a relevant chunk dropped by the distance limit, and a network error outside the traced graph; no answer contradicted my files, and groundedness was checked against chunk text for only some runs.
 
 ---
 
