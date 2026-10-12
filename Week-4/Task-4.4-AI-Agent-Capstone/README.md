@@ -79,9 +79,10 @@ python -m venv venv-week4
 pip install -r Week-4/Task-4.4-AI-Agent-Capstone/requirements.txt
 Copy-Item Week-4/Task-4.4-AI-Agent-Capstone/.env.example Week-4/Task-4.4-AI-Agent-Capstone/.env
 ```
-Open the new `.env` and add your own Google Gemini key (and optionally a
-LangSmith key; set `LANGSMITH_TRACING=false` to run without LangSmith). Never
-commit `.env`.
+Open the new `.env` and add your own Google Gemini key. LangSmith tracing is
+off by default (`LANGSMITH_TRACING=false`), so no LangSmith key is needed. To
+trace runs, set `LANGSMITH_TRACING=true` and put your own LangSmith key in
+`LANGSMITH_API_KEY`. Never commit `.env`.
 
 ## How to Run
 ```
@@ -124,7 +125,9 @@ differences between questions are not meaningful).
 - The planning call runs for every answerable question, which adds one Gemini call and its tokens.
 - 7 knowledge-base files only; one run per question; tested on Windows with Python 3.11 only.
 - Free Gemini tier: request limits apply, and inputs may be used to improve Google products.
-- A fresh-clone run of this README has not been done yet.
+- A fresh clone was tested once on one Windows machine (install, index rebuild, three questions); no other machine or operating system was tried.
+- With tracing on and a placeholder LangSmith key, the agent still answers correctly but prints repeated 403 upload errors (seen in a fresh-clone test).
+- `langchain-core` is not pinned: 1.6.7 on my laptop and 1.6.9 in a fresh install. Three test questions gave identical results with both.
 
 ## Future Improvements
 - Tune the distance limit with more questions
