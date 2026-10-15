@@ -30,7 +30,7 @@
 | Week 4 | RAG Application | Completed | [View](Week-4/Task-4.1-RAG-Application) |
 | Week 4 | LangGraph Workflow | Completed | [View](Week-4/Task-4.2-LangGraph-Workflow) |
 | Week 4 | LangSmith Evaluation | Completed | [View](Week-4/Task-4.3-LangSmith-Evaluation) |
-| Week 4 | AI Agent Capstone | Pending | - |
+| Week 4 | AI Agent Capstone | Submitted | [View](Week-4/Task-4.4-AI-Agent-Capstone) |
 
 ---
 
@@ -59,30 +59,34 @@ Task 3.1 completed: built a TensorFlow/Keras feed-forward network on the Califor
 Housing dataset using the same split, scaling, architecture and training settings as the
 Week 2 PyTorch model, and compared the two using a seeded, timed PyTorch re-run
 (test MSE 0.2916 Keras vs 0.2877 PyTorch, a gap within the run-to-run variation observed;
-training time 70.6 s vs 39.0 s on CPU). Task 3.2 completed: built an SMS spam classifier
+training time 70.6 s vs 39.0 s on CPU). 
+Task 3.2 completed: built an SMS spam classifier
 in TensorFlow/Keras on the UCI SMS Spam Collection (duplicates removed, stratified split,
 TF-IDF baselines); on the held-out test set the Keras model reached spam recall 0.86 and
 precision 0.88 (F1 0.87) against recall 0.71 and precision 0.99 (F1 0.83) for the baseline,
-with saved model files, a prediction script and documented limitations. Task 3.3 completed:
+with saved model files, a prediction script and documented limitations. 
+Task 3.3 completed:
 built a prompt engineering portfolio for reasoning, extraction, summarization and coding,
 using invented test inputs, expected answers and scoring rules written before running, one
 change per prompt version, and scored results for every version (final versions scored 15/15
 reasoning, 30/30 extraction, 11/12 summarization and 22/22 coding; one model, ChatGPT, and
-one run per input, so consistency across runs is not verified). Task 3.4 completed: built a Flask to-do app with ChatGPT, then audited the generated code with test scripts; four problems were confirmed and fixed (debug mode on, list-position task ids, a crash on wrong-type JSON, and a damaged file overwritten), checked with Flask's test client rather than a real browser.
+one run per input, so consistency across runs is not verified). 
+Task 3.4 completed: built a Flask to-do app with ChatGPT, then audited the generated code with test scripts; four problems were confirmed and fixed (debug mode on, list-position task ids, a crash on wrong-type JSON, and a damaged file overwritten), checked with Flask's test client rather than a real browser.
 
 ### Week 4 - LangChain, LangGraph & AI Agents
 Task 4.1 completed: built a LangChain RAG assistant over 7 of my own project README files (64 chunks, size 500 and overlap 50), using local all-MiniLM-L6-v2 embeddings, a FAISS index and Gemini (gemini-3.1-flash-lite) with a grounded prompt, k = 4 and a distance threshold of 1.2; tested easy, multi-part, near-miss, out-of-scope and invalid inputs, with two documented poor-retrieval cases (a Limitations chunk ranked above the answer; a "Final configuration" Results chunk not retrieved); the threshold was set from few examples and is untuned.
 Task 4.2 completed: built a LangGraph workflow around the Task 4.1 RAG pipeline (5 nodes, 2 conditional branches, a state field that logs the path taken), designed in a diagram first and checked against the code; tested a normal question, short and empty text, a non-text input, an out-of-scope question and a near-miss question; limitation: the path does not show when the model refuses inside the generate node.
 Task 4.3 completed: traced the LangGraph workflow in LangSmith (13 runs; expected answers written before running) and recorded latency per run (about 0.1 s when Gemini is skipped, 3.5 to 7.1 s when it is called, one run per question); found a Results chunk missing from retrieval, a relevant chunk dropped by the distance limit, and a network error outside the traced graph; no answer contradicted my files, and groundedness was checked against chunk text for only some runs.
+Task 4.4 built and tested: a Project Documentation Assistant agent (8-node LangGraph workflow with input validation, FAISS retrieval, a planning step, a safe calculator tool with a number check, and three decline paths) over 7 of my own documentation files; 10 real-model tests plus 35 automated cases (17 calculator, 12 number check, 6 branch); one percentage question failed and was fixed (the constant 100), and open limitations include unit wording, an untuned distance limit that dropped the Offer Letter ID chunk, and baseline choice; a fresh clone was tested once on one Windows machine.
 
 ---
 
 ## Final Capstone
-AI Agent System
-GitHub: 
-Live Demo: 
-Report: 
-Presentation: 
+- **Project:** Project Documentation Assistant (AI Agent System)
+- **GitHub:** [Week-4/Task-4.4-AI-Agent-Capstone](Week-4/Task-4.4-AI-Agent-Capstone)
+- **Live Demo:** Not provided (run instructions are in the capstone README)
+- **Report:** [REPORT.md](Week-4/Task-4.4-AI-Agent-Capstone/REPORT.md)
+- **Presentation:** [final-presentation.pdf](Final-Presentation/final-presentation.pdf) 
 
 ---
 
